@@ -1,0 +1,23 @@
+body {
+background-image: url("../img/policia.jfif");
+}
+
+#narrativa {
+    display: block;
+}
+
+#personagem {
+
+}
+
+#desafio_audio {
+    display: none;
+}
+
+#desafio_img {
+    display: none;
+}
+
+#desafio_final {
+    display: none;
+}
