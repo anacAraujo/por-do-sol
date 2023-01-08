@@ -28,6 +28,10 @@ body {
     padding: 0.5%;
 }
 
+#fala {
+    color: #FFD868;
+}
+
 .opcao {
     display: block;
     width: 100%;
