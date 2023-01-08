@@ -1,13 +1,45 @@
 body {
-background-image: url("../img/policia.jfif");
+    background-image: url("../img/policia.jfif");
+    margin: 0;
+    padding-right: 5%;
+    padding-left: 5%;
+    border: solid 2px #0dcaf0;
+    min-height: 100vh;
+
 }
 
 #narrativa {
     display: block;
+
 }
 
 #personagem {
+    position: fixed;
+    bottom: 0;
+}
 
+#dialogo {
+    background-color: #721B65;
+    opacity: 0.8;
+    width: 50%;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    padding: 0.5%;
+}
+
+.opcao {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #FFD868;
+    color: #FFD868;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 #desafio_audio {
