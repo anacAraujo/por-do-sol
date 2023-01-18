@@ -135,7 +135,7 @@ const dialogo8 = {
 const zonaMadragoa = {
     nome: "Madragoa",
     dialogos: [dialogo0,dialogo1,dialogo2,dialogo3,dialogo4,dialogo5,dialogo6,dialogo7,dialogo8],
-    imagem: "../img/madragoa.jpg"
+    imagem: "url('../img/madragoa.jpg')"
 };
 
 const zonas = [zonaQuartel,zonaMadragoa];

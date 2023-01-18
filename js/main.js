@@ -1,13 +1,12 @@
 let numDialogo = 0;
 let numZona = 0;
-let zonaAtual = zonas[numZona];
+let zonaAtual;
 let numUltimoDialogo = 0;
 
 function showDialog(dialog) {
 
     if (zonaAtual.dialogos[numUltimoDialogo].personagem.imagem !== dialog.personagem.imagem) {
-        const imagemElemento = document.getElementById("personagemImagem");
-        imagemElemento.src = dialog.personagem.imagem;
+        document.getElementById("personagemImagem").src = dialog.personagem.imagem;
         console.log("New Image: ", dialog.personagem.imagem);
     }
 
@@ -37,17 +36,30 @@ function showAreaComum() {
     document.getElementById("opZonas").style.display = "block";
 }
 
+function hideAreaComum() {
+    document.getElementById("personagem").style.display = "block";
+    document.getElementById("dialogo").style.display = "block";
+    document.getElementById("opZonas").style.display = "none";
+}
+
 window.onload = function () {
 
-   showDialog(zonaAtual.dialogos[numDialogo]);
+    zonaAtual = zonas[numZona];
+
+    let dialogoAtual = zonaAtual.dialogos[numDialogo];
+    document.getElementById("personagemImagem").src = dialogoAtual.personagem.imagem;
+    showDialog(dialogoAtual);
 
     document.getElementById("fala").onclick = function () {
         numUltimoDialogo = numDialogo;
         numDialogo++;
-        if (zonaAtual.dialogos[numDialogo].isAreaComum) {
+        dialogoAtual = zonaAtual.dialogos[numDialogo];
+        if (dialogoAtual.isAreaComum) {
             showAreaComum();
+        } else if (dialogoAtual.isFim) {
+            showFim(dialogoAtual);
         } else {
-            showDialog(zonaAtual.dialogos[numDialogo]);
+            showDialog(dialogoAtual);
         }
     }
 
@@ -65,5 +77,32 @@ window.onload = function () {
         } else {
             showDialog(zonaAtual.dialogos[numDialogo]);
         }
+    }
+
+    document.getElementById("madragoa").onclick = function () {
+        numZona = 1;
+        zonaAtual = zonas[numZona];
+        document.body.style.backgroundImage = zonaAtual.imagem;
+
+        hideAreaComum();
+
+        numDialogo = 0;
+        numUltimoDialogo = 0;
+
+        dialogoAtual = zonaAtual.dialogos[numDialogo];
+        document.getElementById("personagemImagem").src = dialogoAtual.personagem.imagem;
+        showDialog(dialogoAtual);
+    }
+
+    document.getElementById("blaze").onclick = function () {
+
+    }
+
+    document.getElementById("bar").onclick = function () {
+
+    }
+
+    document.getElementById("herdade").onclick = function () {
+
     }
 }
