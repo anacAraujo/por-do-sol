@@ -6,12 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Pôr do Sol</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="js/personagens.js"></script>
     <script src="js/dialogos.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
     <div id="narrativa">
-        <div id="personagem"> <img src="img/eduardo.png"> </div>
+        <div id="personagem"></div>
         <div id="dialogo">
             <div id="fala">
                 <p>Olá!!</p>
@@ -20,6 +21,13 @@
                 <button class="opcao" id="opcao1" type="button">Button</button>
                 <button class="opcao" id="opcao2" type="button">Button</button>
             </div>
+        </div>
+        <div id="opZonas">
+            <p>Onde vais investigar?</p>
+            <button class="opZona" id="madragoa" type="button">Madragoa</button>
+            <button class="opZona" id="blaze" type="button">Blaze</button>
+            <button class="opZona" id="bar" type="button">Bar Jesus Quisto</button>
+            <button class="opZona" id="herdade" type="button">Herdade</button>
         </div>
     </div>
 
@@ -33,6 +41,11 @@
 
     <div id="desafio_final">
 
+    </div>
+
+    <div id="final">
+        <h3 id="tituloFim"></h3>
+        <p id="textoFim"></p>
     </div>
 </body>
 </html>
