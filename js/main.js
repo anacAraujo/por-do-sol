@@ -1,8 +1,16 @@
 let numDialogo = 0;
 let numZona = 0;
+let zonaAtual = zonas[numZona];
+let numUltimoDialogo = 0;
 
 function showDialog(dialog) {
-    document.getElementById("personagem").innerHTML = '<img src="' + dialog.personagem.imagem + '">';
+
+    if (zonaAtual.dialogos[numUltimoDialogo].personagem.imagem !== dialog.personagem.imagem) {
+        const imagemElemento = document.getElementById("personagemImagem");
+        imagemElemento.src = dialog.personagem.imagem;
+        console.log("New Image: ", dialog.personagem.imagem);
+    }
+
     if (dialog.isFala) {
         document.getElementById("opcoes").style.display = "none";
         document.getElementById("fala").style.display = "block";
@@ -31,10 +39,10 @@ function showAreaComum() {
 
 window.onload = function () {
 
-    let zonaAtual = zonas[numZona];
    showDialog(zonaAtual.dialogos[numDialogo]);
 
     document.getElementById("fala").onclick = function () {
+        numUltimoDialogo = numDialogo;
         numDialogo++;
         if (zonaAtual.dialogos[numDialogo].isAreaComum) {
             showAreaComum();
@@ -44,11 +52,13 @@ window.onload = function () {
     }
 
     document.getElementById("opcao1").onclick = function () {
+        numUltimoDialogo = numDialogo;
         numDialogo = zonaAtual.dialogos[numDialogo].nextOp1;
         showDialog(zonaAtual.dialogos[numDialogo]);
     }
 
     document.getElementById("opcao2").onclick = function () {
+        numUltimoDialogo = numDialogo;
         numDialogo = zonaAtual.dialogos[numDialogo].nextOp2;
         if (zonaAtual.dialogos[numDialogo].isFim) {
             showFim(zonaAtual.dialogos[numDialogo])
