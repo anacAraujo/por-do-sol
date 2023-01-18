@@ -3,6 +3,17 @@ let numZona = 0;
 let zonaAtual;
 let numUltimoDialogo = 0;
 
+function mundancaCenario() {
+    const dialogoAtual = zonaAtual.dialogos[numDialogo];
+    if (dialogoAtual.isAreaComum) {
+        showAreaComum();
+    } else if (dialogoAtual.isFim) {
+        showFim(dialogoAtual);
+    } else {
+        showDialog(dialogoAtual);
+    }
+}
+
 function showDialog(dialog) {
 
     if (zonaAtual.dialogos[numUltimoDialogo].personagem.imagem !== dialog.personagem.imagem) {
@@ -42,56 +53,45 @@ function hideAreaComum() {
     document.getElementById("opZonas").style.display = "none";
 }
 
-window.onload = function () {
-
+function mudarZona() {
     zonaAtual = zonas[numZona];
+    document.body.style.backgroundImage = zonaAtual.imagem;
 
-    let dialogoAtual = zonaAtual.dialogos[numDialogo];
+    hideAreaComum();
+
+    numDialogo = 0;
+    numUltimoDialogo = 0;
+
+    const dialogoAtual = zonaAtual.dialogos[numDialogo];
     document.getElementById("personagemImagem").src = dialogoAtual.personagem.imagem;
     showDialog(dialogoAtual);
+}
+
+window.onload = function () {
+
+    mudarZona();
 
     document.getElementById("fala").onclick = function () {
         numUltimoDialogo = numDialogo;
         numDialogo++;
-        dialogoAtual = zonaAtual.dialogos[numDialogo];
-        if (dialogoAtual.isAreaComum) {
-            showAreaComum();
-        } else if (dialogoAtual.isFim) {
-            showFim(dialogoAtual);
-        } else {
-            showDialog(dialogoAtual);
-        }
+        mundancaCenario();
     }
 
     document.getElementById("opcao1").onclick = function () {
         numUltimoDialogo = numDialogo;
         numDialogo = zonaAtual.dialogos[numDialogo].nextOp1;
-        showDialog(zonaAtual.dialogos[numDialogo]);
+        mundancaCenario();
     }
 
     document.getElementById("opcao2").onclick = function () {
         numUltimoDialogo = numDialogo;
         numDialogo = zonaAtual.dialogos[numDialogo].nextOp2;
-        if (zonaAtual.dialogos[numDialogo].isFim) {
-            showFim(zonaAtual.dialogos[numDialogo])
-        } else {
-            showDialog(zonaAtual.dialogos[numDialogo]);
-        }
+        mundancaCenario();
     }
 
     document.getElementById("madragoa").onclick = function () {
         numZona = 1;
-        zonaAtual = zonas[numZona];
-        document.body.style.backgroundImage = zonaAtual.imagem;
-
-        hideAreaComum();
-
-        numDialogo = 0;
-        numUltimoDialogo = 0;
-
-        dialogoAtual = zonaAtual.dialogos[numDialogo];
-        document.getElementById("personagemImagem").src = dialogoAtual.personagem.imagem;
-        showDialog(dialogoAtual);
+        mudarZona();
     }
 
     document.getElementById("blaze").onclick = function () {
