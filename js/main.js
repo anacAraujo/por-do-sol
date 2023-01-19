@@ -9,6 +9,8 @@ function mundancaCenario() {
         showAreaComum();
     } else if (dialogoAtual.isFim) {
         showFim(dialogoAtual);
+    } else if (dialogoAtual.isDesafioFinal){
+        showDesafioFinal();
     } else {
         showDialog(dialogoAtual);
     }
@@ -67,7 +69,18 @@ function mudarZona() {
     showDialog(dialogoAtual);
 }
 
+
 window.onload = function () {
+
+    document.getElementById("tutorial").style.display = "none";
+    document.getElementById("narrativa").style.display = "none";
+    document.getElementById("inicio").style.display = "block";
+
+    document.getElementById("botaoIniciar").onclick = function () {
+        document.getElementById("tutorial").style.display = "block";
+        document.getElementById("narrativa").style.display = "block";
+        document.getElementById("inicio").style.display = "none";
+    }
 
     mudarZona();
 
