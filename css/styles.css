@@ -1,9 +1,9 @@
 body {
+    background-image: url("../img/logo_comfundo.png");
     background-color: #721B65;
     margin: 0;
     padding-right: 5%;
     padding-left: 5%;
-    border: solid 2px #0dcaf0;
     min-height: 100vh;
 }
 

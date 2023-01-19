@@ -80,9 +80,10 @@ window.onload = function () {
         document.getElementById("tutorial").style.display = "block";
         document.getElementById("narrativa").style.display = "block";
         document.getElementById("inicio").style.display = "none";
+        mudarZona();
     }
 
-    mudarZona();
+
 
     document.getElementById("fala").onclick = function () {
         numUltimoDialogo = numDialogo;
