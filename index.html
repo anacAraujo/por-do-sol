@@ -6,6 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Pôr do Sol Experience</title>
     <link rel="icon" type="image/x-icon" href="/img/logo_semfundo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="js/personagens.js"></script>
     <script src="js/dialogos.js"></script>
@@ -17,8 +20,10 @@
         <p>Bem-vindo à Experiencia de Põr do Sol</p>
         <button class="opcao" id="botaoIniciar" type="button">Iniciar</button>
     </div>
-    <div id="tutorial">
 
+    <div id="tutorial">
+        <div id="tutorialTexto"></div>
+        <div id="tutorialIcon"></div>
     </div>
     <div id="narrativa">
         <div id="personagem">
@@ -33,11 +38,11 @@
                 <button class="opcao" id="opcao2" type="button">Button</button>
             </div>
         </div>
-        <div id="opZonas">
-            <p>Onde vais investigar?</p>
+        <div id="opZonas"  class="opcaoZonas">
+            <p id="pZona">Onde vais investigar?</p>
             <button class="opZona" id="madragoa" type="button">Madragoa</button>
             <button class="opZona" id="blaze" type="button">Blaze</button>
-            <button class="opZona" id="bar" type="button">Bar Jesus Quisto</button>
+            <button class="opZona" id="bar" type="button">Bar</button>
             <button class="opZona" id="herdade" type="button">Herdade</button>
         </div>
     </div>
@@ -71,6 +76,7 @@
     <div id="final">
         <h3 id="tituloFim"></h3>
         <p id="textoFim"></p>
+        <a href="index.html"><button class="bf1-hover bf2">Voltar a tentar.</button></a>
     </div>
 </body>
 </html>
