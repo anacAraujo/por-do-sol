@@ -97,7 +97,7 @@ const madragoa2 = {
 const madragoa3 = {
     isFala: false,
     textoOp1: "Interrogar puto.",
-    nextOp1: 15,
+    nextOp1: 16,
     textoOp2: "Interrogar Ivone.",
     nextOp2: 4,
     personagem: Ivone1
