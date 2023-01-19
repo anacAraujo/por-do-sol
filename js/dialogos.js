@@ -283,16 +283,16 @@ const blaze11 = {
     textoOp1: "Contactar.",
     nextOp1: 12,
     textoOp2: "Não Contactar.",
-    nextOp2: 5,
+    nextOp2: 21,
     personagem: Filipa
 }
 
 const blaze12 = {
     isFala: false,
     textoOp1: "Agradeço a dica.",
-    nextOp1: 5,
+    nextOp1: 21,
     textoOp2: "Ok.",
-    nextOp2: 5,
+    nextOp2: 21,
     personagem: telemovel
 }
 
@@ -336,10 +336,32 @@ const blaze19 = {
     personagem: Raul
 }
 
-//TODO ganhou ou não o desafio e voltar para o 5 com opçoes diferentes
+const blaze20 = {
+    isFala: false,
+    textoOp1: "Voltar à area comum.",
+    nextOp1: 22,
+    textoOp2: "Interrogar Filipa: Filipa, onde estava no dia em que o Testículo foi raptado?",
+    nextOp2: 6,
+    personagem: DoutorRodrigo
+}
+
+const blaze21 = {
+    isFala: false,
+    textoOp1: "Voltar à area comum.",
+    nextOp1: 22,
+    textoOp2: "Interrogar Raul: Olá Raul.",
+    nextOp2: 13,
+    personagem: DoutorRodrigo
+}
+
+const blaze22AreaComum = {
+    isAreaComum: true
+}
+
+//TODO ganhou ou não
 const zonaBlaze = {
     nome: "Blaze",
-    dialogos: [blaze0,blaze1,blaze2,blaze3,blaze4,blaze5,blaze6,blaze7,blaze8,blaze9,blaze10,blaze11,blaze12,blaze13,blaze14,blaze15,blaze16,blaze17,blaze18,blaze19],
+    dialogos: [blaze0,blaze1,blaze2,blaze3,blaze4,blaze5,blaze6,blaze7,blaze8,blaze9,blaze10,blaze11,blaze12,blaze13,blaze14,blaze15,blaze16,blaze17,blaze18,blaze19,blaze20,blaze21,blaze22AreaComum],
     imagem: "url('../img/blaze.png')"
 }
 

@@ -97,8 +97,6 @@ window.onload = function () {
     document.getElementById("blaze").onclick = function () {
         numZona = 2;
         mudarZona();
-
-        let n
     }
 
     document.getElementById("bar").onclick = function () {
