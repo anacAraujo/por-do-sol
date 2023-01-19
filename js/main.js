@@ -3,9 +3,13 @@ let numZona = 0;
 let zonaAtual;
 let numUltimoDialogo = 0;
 
-function showTutorial() {
+function showTutorial(tutorialText) {
     document.getElementById("tutorial").style.display = "block";
-    document.getElementById("tutorialTexto").innerHTML = "<p>Clica na fala do Eduardo para passar para a seguinte</p>"
+    document.getElementById("tutorialTexto").innerHTML = "<p>" + tutorialText + "</p>";
+}
+
+function hideTutorial() {
+    document.getElementById("tutorial").style.display = "none";
 }
 
 function mundancaCenario() {
@@ -18,6 +22,11 @@ function mundancaCenario() {
         showDesafioFinal();
     } else {
         showDialog(dialogoAtual);
+    }
+
+    hideTutorial();
+    if (dialogoAtual.tutorialText) {
+        setTimeout(showTutorial,500, dialogoAtual.tutorialText);
     }
 }
 
@@ -71,9 +80,8 @@ function mudarZona() {
 
     const dialogoAtual = zonaAtual.dialogos[numDialogo];
     document.getElementById("personagemImagem").src = dialogoAtual.personagem.imagem;
-    showDialog(dialogoAtual);
+    mundancaCenario();
 }
-
 
 window.onload = function () {
 
@@ -86,15 +94,9 @@ window.onload = function () {
         document.getElementById("narrativa").style.display = "block";
         document.getElementById("inicio").style.display = "none";
         mudarZona();
-
-        //TODO
-        timer = setTimeout(showTutorial(),5000)
     }
 
-
-
     document.getElementById("fala").onclick = function () {
-        clearTimeout(timer)
         numUltimoDialogo = numDialogo;
         numDialogo++;
         mundancaCenario();

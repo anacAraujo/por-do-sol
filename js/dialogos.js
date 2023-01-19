@@ -2,7 +2,8 @@
 const quartel0 = {
     isFala: true,
     textoFala: "Bem-vindo. Soube que és o novo detetive do quartel.",
-    personagem: Paula
+    personagem: Paula,
+    tutorialText: "Clica na fala do Eduardo para passar para a seguinte."
 }
 
 const quartel1 = {
@@ -17,7 +18,8 @@ const quartel2 = {
     nextOp1: 3,
     textoOp2: "Os meus agradeciementos.",
     nextOp2: 3,
-    personagem: Paula
+    personagem: Paula,
+    tutorialText: "Escolha a opção que quer responder."
 }
 
 const quartel3 = {
@@ -494,7 +496,7 @@ const herdade5AreaComum = {
     isAreaComum: true
 }
 
-const herdade9Fim = {
+const herdade5Fim = {
     isFim: true,
     fimTitulo: "",
     fimTexto: ""
@@ -502,7 +504,7 @@ const herdade9Fim = {
 
 const zonaHerdade = {
     nome: "Bar Jesus Quisto",
-    dialogos: [herdade0,herdade1,herdade2,herdade3,herdade4DesafioFinal,herdade5AreaComum],
+    dialogos: [herdade0,herdade1,herdade2,herdade3,herdade4DesafioFinal,herdade5AreaComum,herdade5Fim],
     imagem: "url('../img/cenarios/herdade.jpg')"
 }
 
