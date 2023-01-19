@@ -191,7 +191,7 @@ const madragoa16Fim = {
 const zonaMadragoa = {
     nome: "Madragoa",
     dialogos: [madragoa0,madragoa1,madragoa2,madragoa3,madragoa4,madragoa5,madragoa6,madragoa7,madragoa8,madragoa9,madragoa10,madragoa11,madragoa12,madragoa13,madragoa14,madragoa15AreaComum,madragoa16Fim],
-    imagem: "url('../img/madragoa.jpg')"
+    imagem: "url('../img/cenarios/madragoa.jpg')"
 };
 
 
@@ -326,51 +326,185 @@ const blaze17 = {
     personagem: Raul
 }
 
+//TODO ganhou ou não
 const blaze18 = {
     isDesafio: true,
 }
 
 const blaze19 = {
     isFala: true,
-    textoFala: 'No fórum "Animais Raptados em Herdades", dizem que o Testículo foi levado por alguém que usa casacos de pele e diz "salchicha".',
+    textoFala: "Perdeste. Lamento, não tenho nada para ter dizer.",
     personagem: Raul
 }
 
 const blaze20 = {
-    isFala: false,
-    textoOp1: "Voltar à area comum.",
-    nextOp1: 22,
-    textoOp2: "Interrogar Filipa: Filipa, onde estava no dia em que o Testículo foi raptado?",
-    nextOp2: 6,
-    personagem: DoutorRodrigo
+    isFala: true,
+    textoFala: 'No fórum "Animais Raptados em Herdades", dizem que o Testículo foi levado por alguém que usa casacos de pele e diz "salchicha".',
+    personagem: Raul
 }
 
 const blaze21 = {
     isFala: false,
     textoOp1: "Voltar à area comum.",
-    nextOp1: 22,
+    nextOp1: 23,
+    textoOp2: "Interrogar Filipa: Filipa, onde estava no dia em que o Testículo foi raptado?",
+    nextOp2: 6,
+    personagem: DoutorRodrigo
+}
+
+const blaze22 = {
+    isFala: false,
+    textoOp1: "Voltar à area comum.",
+    nextOp1: 23,
     textoOp2: "Interrogar Raul: Olá Raul.",
     nextOp2: 13,
     personagem: DoutorRodrigo
 }
 
-const blaze22AreaComum = {
+const blaze23AreaComum = {
     isAreaComum: true
 }
 
-//TODO ganhou ou não
 const zonaBlaze = {
     nome: "Blaze",
-    dialogos: [blaze0,blaze1,blaze2,blaze3,blaze4,blaze5,blaze6,blaze7,blaze8,blaze9,blaze10,blaze11,blaze12,blaze13,blaze14,blaze15,blaze16,blaze17,blaze18,blaze19,blaze20,blaze21,blaze22AreaComum],
-    imagem: "url('../img/blaze.png')"
+    dialogos: [blaze0,blaze1,blaze2,blaze3,blaze4,blaze5,blaze6,blaze7,blaze8,blaze9,blaze10,blaze11,blaze12,blaze13,blaze14,blaze15,blaze16,blaze17,blaze18,blaze19,blaze20,blaze21,blaze22,blaze23AreaComum],
+    imagem: "url('../img/cenarios/blaze.png')"
 }
 
 //zona bar jesus quisto
+const bar0 = {
+    isFala: true,
+    textoFala: "Este cheiro a sonhos de artista põe-me sempre o nariz entupido! Que chatice, agora vou ter de ir encontrar alguém para fazer sexo selvagem.",
+    personagem: DoutorRodrigo
+}
+
+const bar1 = {
+    isFala: false,
+    textoOp1: "Mas o que tem a ver sexo com o nariz entupido?",
+    nextOp1: 2,
+    textoOp2: "Ranho e hormonas relacionam-se?",
+    nextOp2: 2,
+    personagem: DoutorRodrigo
+}
+
+const bar2 = {
+    isFala: true,
+    textoFala: "Pergunta à Siri sobre o estudo de Olcay Cem Bulut e passas a descobrir. Até já, não devo demorar muito.",
+    personagem: DoutorRodrigo
+}
+
+const bar3 = {
+    isFala: true,
+    textoFala: "Quem és tu?",
+    personagem: Vera
+}
+
+const bar4 = {
+    isFala: false,
+    textoOp1: "Sou detetive e preciso de vos fazer umas perguntas.",
+    nextOp1: 5,
+    textoOp2: "Sabem alguma coisa sobre o desaparecimento do Testículo do Senhor Engenheiro Eduardo.",
+    nextOp2: 5,
+    personagem: Vera
+}
+
+const bar5 = {
+    isFala: true,
+    textoFala: "Eia man não curto nada de bófia.",
+    personagem: Diogo
+}
+
+const bar6 = {
+    isFala: true,
+    textoFala: "Nem eu, as balas que eles usam não têm bambu biológico e eu sou bueda vegan.",
+    personagem: Jimmy
+}
+
+const bar7 = {
+    isFala: true,
+    textoFala: "É! Se queres respostas tens que nos provar que gostas mesmo do nosso som.",
+    personagem: Vera
+}
+
+const bar8 = {
+    isDesafio: true
+}
+
+//se perdeu
+const bar9 = {
+    isFala: true,
+    textoFala: "É melhor saires já daqui que eu tenho aulas de judo e já bati no José Rodrigo dos Santos.",
+    personagem: Diogo
+}
+
+//se ganhou
+const bar10 = {
+    isFala: true,
+    textoFala: "Como provaste que aprecias a nossa arte, podemos dizer-te que um dos nossos fâs viu um cavalo com um cachecol de caxemira banhado a ouro de diamante a entrar num clube para bisexuais anónimos.",
+    personagem: Vera
+}
+
+const bar11AreaComum = {
+    isAreaComum: true
+}
+
 
 const zonaBar = {
     nome: "Bar Jesus Quisto",
-    dialogos: [],
-    imagem: "url('../img/bar.png')"
+    dialogos: [bar0,bar1,bar2,bar3,bar4,bar5,bar6,bar7,bar8,bar9,bar10,bar11AreaComum],
+    imagem: "url('../img/cenarios/bar.png')"
 }
 
-const zonas = [zonaQuartel,zonaMadragoa,zonaBlaze,zonaBar];
+//zona herdade
+const herdade0 = {
+    isFala: true,
+    textoFala: "E então já descobriu quem me levou o Testículo?",
+    personagem: Eduardo
+}
+
+const herdade1 = {
+    isFala: false,
+    textoOp1: "Não.",
+    nextOp1: 5,
+    textoOp2: "Sim.",
+    nextOp2: 2,
+    personagem: Eduardo
+}
+
+const herdade2 = {
+    isFala: true,
+    textoFala: "Quem foi?",
+    personagem: Eduardo
+}
+
+const herdade3 = {
+    isFala: false,
+    textoOp1: "Simão",
+    nextOp1: 4,
+    textoOp2: "Filipa.",
+    nextOp2: 4,
+    personagem: Eduardo
+}
+
+const herdade4DesafioFinal = {
+    isDesafioFinal: true
+}
+
+const herdade5AreaComum = {
+    isAreaComum: true
+}
+
+const herdade9Fim = {
+    isFim: true,
+    fimTitulo: "",
+    fimTexto: ""
+}
+
+const zonaHerdade = {
+    nome: "Bar Jesus Quisto",
+    dialogos: [herdade0,herdade1,herdade2,herdade3,herdade4DesafioFinal,herdade5AreaComum],
+    imagem: "url('../img/cenarios/herdade.jpg')"
+}
+
+
+const zonas = [zonaQuartel,zonaMadragoa,zonaBlaze,zonaBar,zonaHerdade];
