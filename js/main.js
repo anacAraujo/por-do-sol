@@ -3,6 +3,11 @@ let numZona = 0;
 let zonaAtual;
 let numUltimoDialogo = 0;
 
+function showTutorial() {
+    document.getElementById("tutorial").style.display = "block";
+    document.getElementById("tutorialTexto").innerHTML = "<p>Clica na fala do Eduardo para passar para a seguinte</p>"
+}
+
 function mundancaCenario() {
     const dialogoAtual = zonaAtual.dialogos[numDialogo];
     if (dialogoAtual.isAreaComum) {
@@ -77,15 +82,19 @@ window.onload = function () {
     document.getElementById("inicio").style.display = "block";
 
     document.getElementById("botaoIniciar").onclick = function () {
-        document.getElementById("tutorial").style.display = "block";
+        document.getElementById("tutorial").style.display = "none";
         document.getElementById("narrativa").style.display = "block";
         document.getElementById("inicio").style.display = "none";
         mudarZona();
+
+        //TODO
+        timer = setTimeout(showTutorial(),5000)
     }
 
 
 
     document.getElementById("fala").onclick = function () {
+        clearTimeout(timer)
         numUltimoDialogo = numDialogo;
         numDialogo++;
         mundancaCenario();
