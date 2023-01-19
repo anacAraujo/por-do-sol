@@ -1,10 +1,106 @@
 body {
-    background-image: url("../img/logo_comfundo.png");
+    background-image: url("../img/fundo.png");
     margin: 0;
-    padding-right: 5%;
-    padding-left: 5%;
     min-height: 100vh;
     font-family: 'Source Code Pro', monospace;
+    overflow: hidden;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#frameLogo {
+    text-align: center;
+    margin: auto;
+    z-index: 10;
+    margin-top: 7%;
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
+}
+
+#pInicio {
+    position: absolute;
+    font-weight: bold;
+    top: 10%;
+    left: 33%;
+    font-size: 20px;
+}
+
+#botaoIniciar {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+:root {
+    --purple: rgb(168, 0, 255);
+    --violet: rgb(255, 216, 104);
+    --pink: rgb(250, 7, 6);
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+@keyframes scale {
+    from, to {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+h1 {
+    color: white;
+    font-size: clamp(2em, 2vw, 4em);
+    font-weight: 400;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 > .magic {
+    display: inline-block;
+    position: relative;
+}
+
+h1 > .magic > .magic-text {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+            to right,
+            var(--purple),
+            var(--violet),
+            var(--pink),
+            var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
 }
 
 #tutorial {
@@ -15,19 +111,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-#tutorialTexto {
-    background-color: #F8615A;
-    color: #FFD868;
-    opacity: 1;
-    width: 25%;
-    position: fixed;
-    bottom: 20%;
-    right: 10%;
-    padding: 0 1.9%;
-    border-radius: 0.5%;
-    text-align: center;
 }
 
 #tutorialIcon {
@@ -90,6 +173,19 @@ body {
     }
 }
 
+#tutorialTexto {
+    background-color: #F8615A;
+    color: #FFD868;
+    opacity: 1;
+    width: 25%;
+    position: fixed;
+    bottom: 20%;
+    right: 10%;
+    padding: 0 1.9%;
+    border-radius: 0.5%;
+    text-align: center;
+}
+
 #narrativa {
     display: block;
     background-color: #721B65;
@@ -98,6 +194,7 @@ body {
 #personagem {
     position: fixed;
     bottom: 0;
+    margin-left: 5%;
 }
 
 #dialogo {
@@ -181,29 +278,21 @@ body {
     margin-left: 20px;
 }
 
-/* COLOCAR */
 #pZona {
     font-size: 21px;
     font-weight: bold;
 }
 
-/* COLOCAR */
 .opZona {
-    /* background-color: transparent;
-   border: 2px solid #FFD868;
-   color: #FFD868;
-   padding: 15px 32px; */
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     margin: 20px;
     width: 30%;
-    /* height: 50px; */
     font-family: 'Source Code Pro', monospace;
 
 
-    /* INICIO ANIMAÇÃO BOTÃO ESCOLHA INVESTIGAR */
     padding: 0.6em 2em;
     border: none;
     outline: none;
@@ -215,7 +304,6 @@ body {
     border-radius: 10px;
 }
 
-/* COLOCAR */
 .opZona:before {
     content: "";
     background: linear-gradient(
@@ -243,7 +331,6 @@ body {
     border-radius: 10px;
 }
 
-/* COLOCAR */
 @keyframes glowingopZona {
     0% {
         background-position: 0 0;
@@ -280,16 +367,24 @@ body {
     border-radius: 10px;
 }
 
-#desafio_audio {
+#desafioSons {
     display: none;
 }
 
-#desafio_img {
+#desafioImg {
     display: none;
 }
 
-#desafio_final {
+#desafioFinal {
     display: none;
+    background-image: url("../img/desafio_final/cenario.gif");
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#desafioFinalEscolhaAvatar {
+    background-color: #800c3e;
 }
 
 #final {

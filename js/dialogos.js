@@ -27,7 +27,6 @@ const quartel3 = {
     textoFala: "Preciso da sua ajuda! O meu Testículo desapareceu! Foi raptado.\n" +
         "Este cavalo vale cerca de 73 mil milhões de bitcoins e sem ele a Herdade do Pôr do Sol pode ir à falência.",
     personagem: Eduardo,
-    isDesafioFinal: true
 }
 
 const quartel4 = {

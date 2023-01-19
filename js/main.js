@@ -85,12 +85,12 @@ function mudarZona() {
 
 window.onload = function () {
 
+    // TODO meter no CSS e tirar daqui
     document.getElementById("tutorial").style.display = "none";
     document.getElementById("narrativa").style.display = "none";
     document.getElementById("inicio").style.display = "block";
 
     document.getElementById("botaoIniciar").onclick = function () {
-        document.getElementById("tutorial").style.display = "none";
         document.getElementById("narrativa").style.display = "block";
         document.getElementById("inicio").style.display = "none";
         mudarZona();
