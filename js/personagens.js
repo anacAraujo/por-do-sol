@@ -25,12 +25,12 @@ const Ivone2 = {
 
 const Filipa = {
     nome: "Filipa",
-    imagem: ""
+    imagem: "img/filipa.png"
 }
 
 const Raul = {
     nome: "Raul",
-    imagem: ""
+    imagem: "img/raul.png"
 }
 
 const Vera = {
@@ -46,4 +46,9 @@ const Diogo = {
 const Jimmy = {
     nome: "Jimmy",
     imagem: ""
+}
+
+const telemovel = {
+    nome: "Cavaleiros do Rater",
+    imagem: "img/cavaleiros.png"
 }

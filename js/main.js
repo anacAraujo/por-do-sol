@@ -95,14 +95,19 @@ window.onload = function () {
     }
 
     document.getElementById("blaze").onclick = function () {
+        numZona = 2;
+        mudarZona();
 
+        let n
     }
 
     document.getElementById("bar").onclick = function () {
-
+        numZona = 3;
+        mudarZona();
     }
 
     document.getElementById("herdade").onclick = function () {
-
+        numZona = 4;
+        mudarZona();
     }
 }
