@@ -26,7 +26,8 @@ const quartel3 = {
     isFala: true,
     textoFala: "Preciso da sua ajuda! O meu Testículo desapareceu! Foi raptado.\n" +
         "Este cavalo vale cerca de 73 mil milhões de bitcoins e sem ele a Herdade do Pôr do Sol pode ir à falência.",
-    personagem: Eduardo
+    personagem: Eduardo,
+    isDesafioFinal: true
 }
 
 const quartel4 = {
@@ -120,7 +121,7 @@ const madragoa5 = {
 const madragoa6 = {
     isFala: false,
     textoOp1: "Olhe aí o volume senhora",
-    nextOp1: 11,
+    nextOp1: 12,
     textoOp2: "Por acaso era mesmo com a Ivone que queria falar...",
     nextOp2: 7,
     personagem: Ivone1
@@ -141,7 +142,7 @@ const madragoa8 = {
 const madragoa9 = {
     isFala: false,
     textoOp1: "Olhe aí o volume senhora",
-    nextOp1: 11,
+    nextOp1: 12,
     textoOp2: "Pode dizer-me onde está o Raul?",
     nextOp2: 10,
     personagem: Ivone1
@@ -285,16 +286,16 @@ const blaze11 = {
     textoOp1: "Contactar.",
     nextOp1: 12,
     textoOp2: "Não Contactar.",
-    nextOp2: 21,
+    nextOp2: 22,
     personagem: Filipa
 }
 
 const blaze12 = {
     isFala: false,
     textoOp1: "Agradeço a dica.",
-    nextOp1: 21,
+    nextOp1: 22,
     textoOp2: "Ok.",
-    nextOp2: 21,
+    nextOp2: 22,
     personagem: telemovel
 }
 
