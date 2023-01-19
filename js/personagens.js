@@ -1,6 +1,6 @@
 const Paula = {
     nome: "Paula",
-    imagem: "img/nando.png"
+    imagem: "img/paula.png"
 }
 
 const Eduardo = {
@@ -35,17 +35,17 @@ const Raul = {
 
 const Vera = {
     nome: "Vera",
-    imagem: ""
+    imagem: "img/vera.png"
 }
 
 const Diogo = {
     nome: "Diogo",
-    imagem: ""
+    imagem: "img/diogo.png"
 }
 
 const Jimmy = {
     nome: "Jimmy",
-    imagem: ""
+    imagem: "img/jimmy.png"
 }
 
 const telemovel = {
