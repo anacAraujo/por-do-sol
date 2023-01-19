@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Pôr do Sol</title>
+    <title>Pôr do Sol Experience</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo_semfundo.png">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="js/personagens.js"></script>
     <script src="js/dialogos.js"></script>
+    <script src="js/desafioFinal.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
+    <div id="inicio">
+        <p>Bem-vindo à Experiencia de Põr do Sol</p>
+        <button class="opcao" id="botaoIniciar" type="button">Iniciar</button>
+    </div>
+    <div id="tutorial">
+
+    </div>
     <div id="narrativa">
         <div id="personagem">
             <img id="personagemImagem">
@@ -33,16 +42,30 @@
         </div>
     </div>
 
-    <div id="desafio_audio">
+    <div id="desafioSons">
 
     </div>
 
-    <div id="desafio_img">
+    <div id="desafioImagens">
 
     </div>
 
     <div id="desafio_final">
-
+        <div id="desafioFinalEscolhaAvatar">
+            <button id="avatar1" type="button"><img src="img/desafio_final/avatar1.png"></button>
+            <button id="avatar2" type="button"><img src="img/desafio_final/avatar2.png"></button>
+            <button id="avatar3" type="button"><img src="img/desafio_final/avatar3.png"></button>
+            <button id="avatar4" type="button"><img src="img/desafio_final/avatar4.png"></button>
+        </div>
+        <div id="desafioFinalPerguntas">
+            <p id="desafioFinalPergunta"></p>
+            <button class="opcao" id="desafioFinalOp1" type="button">Button</button>
+            <button class="opcao" id="desafioFinalOp2" type="button">Button</button>
+        </div>
+        <div id="desafioFinalImagens">
+            <img id="avatarUser">
+            <img id="avatarOponente">
+        </div>
     </div>
 
     <div id="final">
