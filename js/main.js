@@ -19,7 +19,7 @@ function mundancaCenario() {
     } else if (dialogoAtual.isFim) {
         showFim(dialogoAtual);
     } else if (dialogoAtual.isDesafioImg) {
-
+        showDesafioImagens();
     } else if (dialogoAtual.isDesafioSons) {
         showDesafioSons();
     } else if (dialogoAtual.isDesafioFinal){
@@ -136,6 +136,7 @@ function mainEvents() {
 window.onload = function () {
 
     mainEvents();
+    desafioImgEvents();
     desafioSonsEvents()
     desafioFinalEvents();
 }
