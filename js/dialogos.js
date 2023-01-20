@@ -36,7 +36,7 @@ const quartel4 = {
     textoOp2: "Não aceito o desafio.",
     nextOp2: 9,
     personagem: Eduardo,
-    isDesafioImg: true
+    //isDesafioImg: true
     //isDesafioSons: true
 }
 

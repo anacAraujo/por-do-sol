@@ -453,6 +453,26 @@ li{
     color: white;
 }
 
+#desafioImagens1 {
+    left: 15%;
+    top: 5%;
+}
+
+#desafioImagens2 {
+    right: 15%;
+    top: 5%;
+}
+
+#desafioImagens3 {
+    left: 15%;
+    bottom: 20%;
+}
+
+#desafioImagens4 {
+    right: 15%;
+    bottom: 20%;
+}
+
 .desafioImagensGrupo {
     width: 50%;
     height: 80%;
@@ -482,6 +502,7 @@ li{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
 }
 
 .desafioImagensBotoes {
@@ -491,18 +512,18 @@ li{
     height: 10%;
     position: absolute;
     left: 10%;
-    top: 70%;
+    top: 85%;
 }
 
 #desafioImagensRespostaCerta {
     position: absolute;
     top: 85%;
-    left: 37%;
+    left: 5%;
 }
 #desafioImagensRespostaErrada {
     position: absolute;
-    top: 89%;
-    left: 37%;
+    top: 90%;
+    left: 5%;
 }
 
 #desafioFinal {

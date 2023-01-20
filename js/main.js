@@ -58,7 +58,6 @@ function showFim(dialog) {
     document.getElementById("final").style.display = "block";
     document.getElementById("tituloFim").innerHTML = dialog.fimTitulo;
     document.getElementById("textoFim").innerHTML = dialog.fimTexto;
-    document.body.style.backgroundImage = ""; // TODO
 }
 
 function showAreaComum() {
