@@ -5,11 +5,13 @@ let numUltimoDialogo = 0;
 
 function showTutorial(tutorialText) {
     document.getElementById("tutorial").style.display = "block";
+    document.getElementById("tutorialIcon").style.display = "block";
     document.getElementById("tutorialTexto").innerHTML = "<p>" + tutorialText + "</p>";
 }
 
 function hideTutorial() {
     document.getElementById("tutorial").style.display = "none";
+    document.getElementById("tutorialIcon").style.display = "none";
 }
 
 function mundancaCenario() {
@@ -91,6 +93,12 @@ function mainEvents() {
         document.getElementById("narrativa").style.display = "block";
         document.getElementById("inicio").style.display = "none";
         mudarZona();
+    }
+
+    document.getElementById("tutorialIcon").onclick = function () {
+        numUltimoDialogo = numDialogo;
+        numDialogo++;
+        mundancaCenario();
     }
 
     document.getElementById("fala").onclick = function () {
