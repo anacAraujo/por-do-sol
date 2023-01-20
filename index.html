@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <script src="js/personagens.js"></script>
     <script src="js/dialogos.js"></script>
+    <script src="js/desafioSons.js"></script>
     <script src="js/desafioFinal.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -52,9 +53,41 @@
         </div>
     </div>
 
+
     <div id="desafioSons">
 
+        <div id="desafioSonsConjunto">
+            <h2 id="question">Question text</h2>
+            <p > <img id="pAudio1" src="img/desafio_sons/icon.jpg"></p>
+            <ul>
+                <li>
+                    <input type="radio"  id="a" name="answer" class="answer"/>
+                    <label id="alineaA" for="a">Question</label>
+                </li>
+
+                <li>
+                    <input type="radio"  id="b" name="answer" class="answer"/>
+                    <label id="alineaB" for="b">Question</label>
+                </li>
+
+                <li>
+                    <input type="radio"  id="c" name="answer" class="answer"/>
+                    <label id="alineaC" for="c">Question</label>
+                </li>
+
+                <li>
+                    <input type="radio"  id="d" name="answer" class="answer"/>
+                    <label id="alineaD" for="d">Question</label>
+                </li>
+            </ul>
+            <button class="opZona" id="submit">Próxima</button>
+        </div>
+        <div id="desafioSonsContagemRespostas">
+            <div id="respCertas">Respostas Certas: 0 </div>
+            <div id="respErradas">Respostas Erradas: 0 </div>
+        </div>
     </div>
+
 
     <div id="desafioImagens">
 
@@ -90,8 +123,6 @@
 
             <img id="avatarUser">
             <img id="avatarOponente" src="img/desafio_final/simao_avatar.png">
-            <img id="punhoUser" src="img/desafio_final/punho.png">
-            <img id="punhoOponente" src="img/desafio_final/punho_simao.png">
         </div>
     </div>
 

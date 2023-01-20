@@ -26,8 +26,7 @@ const quartel3 = {
     isFala: true,
     textoFala: "Preciso da sua ajuda! O meu Testículo desapareceu! Foi raptado.\n" +
         "Este cavalo vale cerca de 73 mil milhões de bitcoins e sem ele a Herdade do Pôr do Sol pode ir à falência.",
-    personagem: Eduardo,
-    isDesafioFinal: true
+    personagem: Eduardo
 }
 
 const quartel4 = {
@@ -36,7 +35,9 @@ const quartel4 = {
     nextOp1: 5,
     textoOp2: "Não aceito o desafio.",
     nextOp2: 9,
-    personagem: Eduardo
+    personagem: Eduardo,
+    isDesafioImg: true
+   // isDesafioSons: true
 }
 
 const quartel5 = {
@@ -332,7 +333,7 @@ const blaze17 = {
 
 //TODO ganhou ou não
 const blaze18 = {
-    isDesafio: true,
+    isDesafioImg: true,
 }
 
 const blaze19 = {
@@ -431,7 +432,7 @@ const bar7 = {
 }
 
 const bar8 = {
-    isDesafio: true
+    isDesafioSons: true
 }
 
 //se perdeu

@@ -387,7 +387,56 @@ h1 > .magic > .magic-text {
 }
 
 #desafioSons {
+    background-image: url("../img/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
     display: none;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#desafioSonsConjunto {
+    background-color: #721b65;
+    opacity: 0.9;
+    padding: 5%;
+    position: absolute;
+    top: 20%;
+    left: 21%;
+    width: 50%;
+}
+
+#desafioSonsConjunto #question {
+    text-align: center;
+}
+
+#pAudio1 {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#submit{
+    display: block;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+#desafioSonsContagemRespostas {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
 }
 
 #desafioImg {
@@ -421,7 +470,7 @@ h1 > .magic > .magic-text {
     top: 10%;
     left: 25%;
     width: 50%;
-    height: 25%;
+    height: 30%;
     text-align: center;
 }
 
@@ -461,18 +510,6 @@ h1 > .magic > .magic-text {
 
 #avatarOponente {
     right: 10%;
-}
-
-#punhoUser {
-    left: 20%;
-}
-
-#punhoOponente {
-    right: 20%
-}
-
-#punhoUser, #punhoOponente {
-    display: none;
 }
 
 #final {

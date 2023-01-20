@@ -1,6 +1,8 @@
 let avatarEscolhido;
 let dFinalErradas = 0;
+let dFinalCertas = 0;
 let dFinalPerguntaAtual = 0;
+let nVidaOponente = 0;
 
 const desafioFinalPerguntas = [{
         pergunta: "Quem está mais protegido de murros?",
@@ -80,37 +82,6 @@ function showDFinalFimVencedor() {
 
 function desafioFinalEvents() {
 
-    document.getElementById("desafioFinalOp1").onclick = function () {
-        const perguntaAtual = desafioFinalPerguntas[dFinalPerguntaAtual];
-        if (perguntaAtual.rCerta === 2) {
-            dFinalErradas++;
-            document.getElementById("punhoOponente").style.display = "block";
-        }
-        if (dFinalErradas >= 3) {
-            showDFinalFim();
-            return;
-        } else if (perguntaAtual >= 5){
-            showDFinalFimVencedor();
-        }
-        dFinalPerguntaAtual++;
-        showDFinalPergunta();
-    }
-
-    document.getElementById("desafioFinalOp2").onclick = function () {
-        const perguntaAtual = desafioFinalPerguntas[dFinalPerguntaAtual];
-        if (perguntaAtual.rCerta === 1) {
-            dFinalErradas++;
-        }
-        if (dFinalErradas >= 3) {
-            showDFinalFim();
-            return;
-        } else if (perguntaAtual >= 5){
-            showDFinalFimVencedor();
-        }
-        dFinalPerguntaAtual++;
-        showDFinalPergunta();
-    }
-
     document.getElementById("avatar1").onclick = function () {
         avatarEscolhido = document.getElementById("avatar1").src;
         iniciarDFinal();
@@ -130,5 +101,49 @@ function desafioFinalEvents() {
         avatarEscolhido = document.getElementById("avatar4").src;
         iniciarDFinal();
     }
+
+
+    document.getElementById("desafioFinalOp1").onclick = function () {
+        const perguntaAtual = desafioFinalPerguntas[dFinalPerguntaAtual];
+        if (perguntaAtual.rCerta === 2) {
+            dFinalErradas++;
+            let nVidaUser = "vidaUser" + dFinalErradas;
+            document.getElementById(nVidaUser).style.display = "none";
+        } else {
+            dFinalCertas++;
+            nVidaOponente = "vidaOponente" + dFinalCertas;
+            document.getElementById(nVidaOponente).style.display = "none";
+        }
+        if (dFinalErradas >= 3) {
+            showDFinalFim();
+            return;
+        } else if (dFinalCertas >= 3){
+            showDFinalFimVencedor();
+        }
+        dFinalPerguntaAtual++;
+        showDFinalPergunta();
+    }
+
+    document.getElementById("desafioFinalOp2").onclick = function () {
+        const perguntaAtual = desafioFinalPerguntas[dFinalPerguntaAtual];
+        if (perguntaAtual.rCerta === 1) {
+            dFinalErradas++;
+            let nVidaUser = "vidaUser" + dFinalErradas;
+            document.getElementById(nVidaUser).style.display = "none";
+        } else {
+            dFinalCertas++;
+            nVidaOponente = "vidaOponente" + dFinalCertas;
+            document.getElementById(nVidaOponente).style.display = "none";
+        }
+        if (dFinalErradas >= 3) {
+            showDFinalFim();
+            return;
+        } else if (dFinalCertas >= 3){
+            showDFinalFimVencedor();
+        }
+        dFinalPerguntaAtual++;
+        showDFinalPergunta();
+    }
+
 }
 
