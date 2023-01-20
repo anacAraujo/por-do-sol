@@ -83,15 +83,7 @@ function mudarZona() {
     mundancaCenario();
 }
 
-window.onload = function () {
-
-    desafioFinalEvents();
-
-    // TODO meter no CSS e tirar daqui
-    document.getElementById("tutorial").style.display = "none";
-    document.getElementById("narrativa").style.display = "none";
-    document.getElementById("inicio").style.display = "block";
-
+function mainEvents() {
     document.getElementById("botaoIniciar").onclick = function () {
         document.getElementById("narrativa").style.display = "block";
         document.getElementById("inicio").style.display = "none";
@@ -135,4 +127,10 @@ window.onload = function () {
         numZona = 4;
         mudarZona();
     }
+}
+
+window.onload = function () {
+
+    mainEvents();
+    desafioFinalEvents();
 }

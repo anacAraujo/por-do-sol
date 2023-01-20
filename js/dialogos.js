@@ -27,7 +27,7 @@ const quartel3 = {
     textoFala: "Preciso da sua ajuda! O meu Testículo desapareceu! Foi raptado.\n" +
         "Este cavalo vale cerca de 73 mil milhões de bitcoins e sem ele a Herdade do Pôr do Sol pode ir à falência.",
     personagem: Eduardo,
-    //isDesafioFinal: true
+    isDesafioFinal: true
 }
 
 const quartel4 = {
@@ -70,7 +70,7 @@ const quartel9Fim = {
 const zonaQuartel = {
     nome: "Quartel Polícia",
     dialogos: [quartel0,quartel1,quartel2,quartel3,quartel4,quartel5,quartel6,quartel7,areaComum,quartel9Fim],
-    imagem: "url('../img/policia.jfif')"
+    imagem: "url('./img/policia.jfif')"
 };
 
 
@@ -93,6 +93,7 @@ const madragoa1 = {
 const madragoa2 = {
     isFala: true,
     textoFala: "Tenho amigos a apanhar pastilhas do chão de 5 países para analisar a composição bacteriana de cada uma.\n" +
+        "AS mais antigas assemelha-se ao bacterioma das plantas, rochas antárcticas, desertos e painéis solares.\n" +
         "Posso ser egoísta na cama mas sou prestável cientificamente.",
     personagem: DoutorRodrigo
 };
@@ -194,7 +195,7 @@ const madragoa16Fim = {
 const zonaMadragoa = {
     nome: "Madragoa",
     dialogos: [madragoa0,madragoa1,madragoa2,madragoa3,madragoa4,madragoa5,madragoa6,madragoa7,madragoa8,madragoa9,madragoa10,madragoa11,madragoa12,madragoa13,madragoa14,madragoa15AreaComum,madragoa16Fim],
-    imagem: "url('../img/cenarios/madragoa.jpg')"
+    imagem: "url('./img/cenarios/madragoa.jpg')"
 };
 
 
@@ -371,7 +372,7 @@ const blaze23AreaComum = {
 const zonaBlaze = {
     nome: "Blaze",
     dialogos: [blaze0,blaze1,blaze2,blaze3,blaze4,blaze5,blaze6,blaze7,blaze8,blaze9,blaze10,blaze11,blaze12,blaze13,blaze14,blaze15,blaze16,blaze17,blaze18,blaze19,blaze20,blaze21,blaze22,blaze23AreaComum],
-    imagem: "url('../img/cenarios/blaze.png')"
+    imagem: "url('./img/cenarios/blaze.png')"
 }
 
 //zona bar jesus quisto
@@ -455,7 +456,7 @@ const bar11AreaComum = {
 const zonaBar = {
     nome: "Bar Jesus Quisto",
     dialogos: [bar0,bar1,bar2,bar3,bar4,bar5,bar6,bar7,bar8,bar9,bar10,bar11AreaComum],
-    imagem: "url('../img/cenarios/bar.png')"
+    imagem: "url('./img/cenarios/bar.png')"
 }
 
 //zona herdade
@@ -485,7 +486,7 @@ const herdade3 = {
     textoOp1: "Simão",
     nextOp1: 4,
     textoOp2: "Filipa",
-    nextOp2: 5,
+    nextOp2: 6,
     personagem: Eduardo
 }
 
@@ -499,14 +500,25 @@ const herdade5AreaComum = {
 
 const herdade6Fim = {
     isFim: true,
-    fimTitulo: "",
-    fimTexto: ""
+    fimTitulo: "Errado!",
+    fimTexto: "A Filipa é inocente."
+}
+
+const herdade7Fim = {
+    isFim: true,
+    fimTitulo: "Oh não...",
+    fimTexto: "Parece que o Simão te venceu!"
+}
+const herdade8Fim = {
+    isFim: true,
+    fimTitulo: "PARABÉNS",
+    fimTexto: "Venceste o Simão!"
 }
 
 const zonaHerdade = {
     nome: "Bar Jesus Quisto",
-    dialogos: [herdade0,herdade1,herdade2,herdade3,herdade4DesafioFinal,herdade5AreaComum,herdade6Fim],
-    imagem: "url('../img/cenarios/herdade.jpg')"
+    dialogos: [herdade0,herdade1,herdade2,herdade3,herdade4DesafioFinal,herdade5AreaComum,herdade6Fim,herdade7Fim,herdade8Fim],
+    imagem: "url('./img/cenarios/herdade.jpg')"
 }
 
 

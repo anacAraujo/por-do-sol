@@ -44,6 +44,10 @@ body {
     font-size: 16px;
 }
 
+#inicio {
+    display: block;
+}
+
 #pInicio {
     position: absolute;
     font-weight: bold;
@@ -118,6 +122,7 @@ h1 > .magic > .magic-text {
 }
 
 #tutorial {
+    display: none;
     background-color: black;
     opacity: 0.7;
     position: absolute;
@@ -202,7 +207,7 @@ h1 > .magic > .magic-text {
 }
 
 #narrativa {
-    display: block;
+    display: none;
     background-color: #721B65;
 }
 
@@ -269,7 +274,6 @@ h1 > .magic > .magic-text {
     color: white;
     padding: 5%;
     background-color: #721b65;
-    opacity: 0.8;
     justify-content: center;
     position: absolute;
     top: 50%;
@@ -411,8 +415,64 @@ h1 > .magic > .magic-text {
     color: white;
 }
 
-.avatares {
-    margin: 5px;
+#desafioFinalPerguntas {
+    background-color: #721b65;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 25%;
+    text-align: center;
+}
+
+#desafioFinalPergunta {
+    margin-top: 30px;
+    color: white;
+    padding: 10px;
+}
+
+
+.vida {
+    width: 2%;
+    height: 2%;
+}
+
+#vidasUser {
+    position: absolute;
+    bottom: 40%;
+    left: 19%;
+}
+
+#vidasOponente {
+    position: absolute;
+    bottom: 40%;
+    right: 18%;
+    text-align: right;
+}
+
+#avatarUser, #avatarOponente, #punhoUser, #punhoOponente {
+    position: absolute;
+    bottom: 5%;
+}
+
+#avatarUser {
+    left: 10%;
+}
+
+#avatarOponente {
+    right: 10%;
+}
+
+#punhoUser {
+    left: 20%;
+}
+
+#punhoOponente {
+    right: 20%
+}
+
+#punhoUser, #punhoOponente {
+    display: none;
 }
 
 #final {
