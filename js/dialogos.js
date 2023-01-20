@@ -27,6 +27,7 @@ const quartel3 = {
     textoFala: "Preciso da sua ajuda! O meu Testículo desapareceu! Foi raptado.\n" +
         "Este cavalo vale cerca de 73 mil milhões de bitcoins e sem ele a Herdade do Pôr do Sol pode ir à falência.",
     personagem: Eduardo,
+    //isDesafioFinal: true
 }
 
 const quartel4 = {
@@ -483,8 +484,8 @@ const herdade3 = {
     isFala: false,
     textoOp1: "Simão",
     nextOp1: 4,
-    textoOp2: "Filipa.",
-    nextOp2: 4,
+    textoOp2: "Filipa",
+    nextOp2: 5,
     personagem: Eduardo
 }
 
@@ -496,7 +497,7 @@ const herdade5AreaComum = {
     isAreaComum: true
 }
 
-const herdade5Fim = {
+const herdade6Fim = {
     isFim: true,
     fimTitulo: "",
     fimTexto: ""
@@ -504,7 +505,7 @@ const herdade5Fim = {
 
 const zonaHerdade = {
     nome: "Bar Jesus Quisto",
-    dialogos: [herdade0,herdade1,herdade2,herdade3,herdade4DesafioFinal,herdade5AreaComum,herdade5Fim],
+    dialogos: [herdade0,herdade1,herdade2,herdade3,herdade4DesafioFinal,herdade5AreaComum,herdade6Fim],
     imagem: "url('../img/cenarios/herdade.jpg')"
 }
 

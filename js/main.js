@@ -85,6 +85,8 @@ function mudarZona() {
 
 window.onload = function () {
 
+    desafioFinalEvents();
+
     // TODO meter no CSS e tirar daqui
     document.getElementById("tutorial").style.display = "none";
     document.getElementById("narrativa").style.display = "none";

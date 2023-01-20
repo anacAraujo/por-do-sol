@@ -24,18 +24,32 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#botaoIniciar {
+    z-index: 11;
+    text-align: center;
+
+    padding: 10px 80px;
+    position: absolute;
+    left: 43%;
+    top: 70%;
+
+    background-color: transparent;
+    -webkit-box-shadow: 5px 5px 5px 0 #000000, inset 4px 4px 15px 0 #000000, 5px 5px 15px 5px rgba(255,139,253,0);
+    box-shadow: 5px 5px 5px 0 #000000, inset 4px 4px 15px 0 #000000, 5px 5px 15px 5px rgba(255,139,253,0);
+
+    border: 3px double #FF4294;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+}
+
 #pInicio {
     position: absolute;
     font-weight: bold;
     top: 10%;
     left: 33%;
     font-size: 20px;
-}
-
-#botaoIniciar {
-    position: absolute;
-    top: 70%;
-    left: 50%;
 }
 
 :root {
@@ -116,8 +130,8 @@ h1 > .magic > .magic-text {
 #tutorialIcon {
     display: flex;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    bottom: 1%;
+    right: 40%;
     transform: translate(-50%,-50%);
     width: 200px;
     height: 200px;
@@ -152,6 +166,7 @@ h1 > .magic > .magic-text {
     box-sizing: border-box;
     animation: 2s linear infinite;
     animation-delay: 1s;
+    animation-name: animate;
 }
 
 @keyframes animate {
@@ -381,10 +396,23 @@ h1 > .magic > .magic-text {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #desafioFinalEscolhaAvatar {
-    background-color: #800c3e;
+    background-color: #721b65;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.avatares {
+    margin: 5px;
 }
 
 #final {
