@@ -3,7 +3,7 @@ const quartel0 = {
     isFala: true,
     textoFala: "Bem-vindo. Soube que és o novo detetive do quartel.",
     personagem: Paula,
-    tutorialText: "Clica na fala do Eduardo para passar para a seguinte."
+    tutorialText: "Clica na fala da Inspetora Paula para passar para a seguinte."
 }
 
 const quartel1 = {
@@ -36,7 +36,7 @@ const quartel4 = {
     textoOp2: "Não aceito o desafio.",
     nextOp2: 9,
     personagem: Eduardo,
-    //isDesafioImg: true
+    isDesafioImg: true
     //isDesafioSons: true
 }
 
@@ -94,7 +94,7 @@ const madragoa1 = {
 const madragoa2 = {
     isFala: true,
     textoFala: "Tenho amigos a apanhar pastilhas do chão de 5 países para analisar a composição bacteriana de cada uma.\n" +
-        "AS mais antigas assemelha-se ao bacterioma das plantas, rochas antárcticas, desertos e painéis solares.\n" +
+        "As mais antigas assemelha-se ao bacterioma das plantas, rochas antárcticas, desertos e painéis solares.\n" +
         "Posso ser egoísta na cama mas sou prestável cientificamente.",
     personagem: DoutorRodrigo
 };
@@ -218,7 +218,7 @@ const blaze1 = {
 
 const blaze2 = {
     isFala: true,
-    textoFala: "Sempre que os vejo os meus niveis de raiva sobem na escala de Will Smith e tenho de dar um murro a carecas porque barbudos não sentem tanto.",
+    textoFala: "Sempre que os vejo os meus níveis de raiva sobem na escala de Will Smith e tenho de dar um murro a carecas porque barbudos não sentem tanto.",
     personagem: DoutorRodrigo
 }
 
