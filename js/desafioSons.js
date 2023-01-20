@@ -1,4 +1,3 @@
-
 let perguntaAtual = 0;
 
 let numErradas = 0;
@@ -10,7 +9,7 @@ let som = 1;
 let audio = new Audio();
 audio.src = "./Sons/som"+som+".wav";
 
-const quizData = [
+const desafioSonsConteudo = [
     {
         question: "Men qual é o nome desta música?",
         a: "Spains",
@@ -98,7 +97,7 @@ function showDSonsFinalPerder() {
 function avancarSom() {
     uncheckRespostas();
 
-    const currentQuizData = quizData[perguntaAtual];
+    const currentQuizData = desafioSonsConteudo[perguntaAtual];
 
     const perguntasEl = document.getElementById("question");
     const alineaA = document.getElementById("alineaA");
@@ -145,7 +144,7 @@ function desafioSonsEvents() {
 
 
         if (resposta) {
-            if (resposta !== quizData[perguntaAtual].correct) {
+            if (resposta !== desafioSonsConteudo[perguntaAtual].correct) {
                 numErradas++;
                 document.getElementById("respErradas").innerHTML = "Respostas Erradas: " + numErradas;
             }
@@ -161,7 +160,7 @@ function desafioSonsEvents() {
             }
 
             perguntaAtual++;
-            if (perguntaAtual < quizData.length) {
+            if (perguntaAtual < desafioSonsConteudo.length) {
                 audio.pause();
                 audio.currentTime = 0;
                 som++;
