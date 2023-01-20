@@ -36,8 +36,8 @@ const quartel4 = {
     textoOp2: "Não aceito o desafio.",
     nextOp2: 9,
     personagem: Eduardo,
-    isDesafioImg: true
-   // isDesafioSons: true
+    //isDesafioImg: true
+    isDesafioSons: true
 }
 
 const quartel5 = {
@@ -435,19 +435,20 @@ const bar8 = {
     isDesafioSons: true
 }
 
-//se perdeu
+//se ganhou
 const bar9 = {
+    isFala: true,
+    textoFala: "Como provaste que aprecias a nossa arte, podemos dizer-te que um dos nossos fâs viu um cavalo com um cachecol de caxemira banhado a ouro de diamante a entrar num clube para bisexuais anónimos.",
+    personagem: Vera
+}
+
+//se perdeu
+const bar10 = {
     isFala: true,
     textoFala: "É melhor saires já daqui que eu tenho aulas de judo e já bati no José Rodrigo dos Santos.",
     personagem: Diogo
 }
 
-//se ganhou
-const bar10 = {
-    isFala: true,
-    textoFala: "Como provaste que aprecias a nossa arte, podemos dizer-te que um dos nossos fâs viu um cavalo com um cachecol de caxemira banhado a ouro de diamante a entrar num clube para bisexuais anónimos.",
-    personagem: Vera
-}
 
 const bar11AreaComum = {
     isAreaComum: true

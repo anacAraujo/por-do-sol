@@ -134,7 +134,6 @@ function mainEvents() {
 }
 
 window.onload = function () {
-
     mainEvents();
     desafioImgEvents();
     desafioSonsEvents()
