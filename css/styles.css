@@ -202,6 +202,7 @@ h1 > .magic > .magic-text {
     padding: 0 1.9%;
     border-radius: 0.5%;
     text-align: center;
+    font-weight: bold;
 }
 
 #narrativa {
@@ -411,8 +412,8 @@ h1 > .magic > .magic-text {
 }
 
 #pAudio1 {
-    width: 70px;
-    height: 70px;
+    width: 110px;
+    height: 100px;
     display: block;
     margin: auto;
     text-align: center;
@@ -437,6 +438,13 @@ li{
     left: 5%;
 }
 
+#desafioImagensP {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 38%;
+}
 
 #desafioImagens {
     display: none;
@@ -455,22 +463,22 @@ li{
 
 #desafioImagens1 {
     left: 15%;
-    top: 5%;
+    top: 10%;
 }
 
 #desafioImagens2 {
     right: 15%;
-    top: 5%;
+    top: 10%;
 }
 
 #desafioImagens3 {
     left: 15%;
-    bottom: 20%;
+    bottom: 15%;
 }
 
 #desafioImagens4 {
     right: 15%;
-    bottom: 20%;
+    bottom: 15%;
 }
 
 .desafioImagensGrupo {
