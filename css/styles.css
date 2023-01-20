@@ -441,7 +441,7 @@ li{
 #desafioImagens {
     display: none;
     margin: 0;
-    padding: 0;
+    padding: 5%;
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
@@ -450,6 +450,7 @@ li{
     background-image: url("../img/fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 
 .desafioImagensGrupo {
@@ -457,12 +458,12 @@ li{
     height: 80%;
     display: flex;
     background-color: #721b65;
+    opacity: 0.9;
     position: absolute;
     top: 5%;
-    left: 18%;
+    left: 22%;
     padding: 10px;
     text-align: center;
-    color: white;
 }
 
 .desafioImagensFotos {
@@ -478,130 +479,11 @@ li{
     border-radius: 1rem;
     text-align: center;
     margin: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#desafioImagens1 {
-    background-image: url("../img/personagens_des_img/lourenço_1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens2 {
-    background-image: url("../img/personagens_des_img/lourenço_2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-#desafioImagens3 {
-    background-image: url("../img/personagens_des_img/lourenço_3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens4 {
-    background-image: url("../img/personagens_des_img/lourenço_4.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens5 {
-    background-image: url("../img/personagens_des_img/madalena_1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens6 {
-    background-image: url("../img/personagens_des_img/madalena_2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens7 {
-    background-image: url("../img/personagens_des_img/madalena_3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens8 {
-    background-image: url("../img/personagens_des_img/madalena_4.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens9 {
-    background-image: url("../img/personagens_des_img/mariadapiedade_1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens10 {
-    background-image: url("../img/personagens_des_img/mariadapiedade_2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens11 {
-    background-image: url("../img/personagens_des_img/mariadapiedade_3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens12 {
-    background-image: url("../img/personagens_des_img/mariadapiedade_4.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens13 {
-    background-image: url("../img/personagens_des_img/narciso_1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens14 {
-    background-image: url("../img/personagens_des_img/narciso_2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens15 {
-    background-image: url("../img/personagens_des_img/narciso_3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens16 {
-    background-image: url("../img/personagens_des_img/narciso_4.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens17 {
-    background-image: url("../img/personagens_des_img/padrevito_1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens18 {
-    background-image: url("../img/personagens_des_img/padrevito_2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens19 {
-    background-image: url("../img/personagens_des_img/padrevito_3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#desafioImagens20 {
-    background-image: url("../img/personagens_des_img/padrevito_4.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: white;
-}
 .desafioImagensBotoes {
     z-index: 1;
     text-align: center;

@@ -36,8 +36,8 @@ const quartel4 = {
     textoOp2: "Não aceito o desafio.",
     nextOp2: 9,
     personagem: Eduardo,
-    //isDesafioImg: true
-    isDesafioSons: true
+    isDesafioImg: true
+    //isDesafioSons: true
 }
 
 const quartel5 = {
@@ -331,20 +331,19 @@ const blaze17 = {
     personagem: Raul
 }
 
-//TODO ganhou ou não
 const blaze18 = {
     isDesafioImg: true,
 }
 
 const blaze19 = {
     isFala: true,
-    textoFala: "Perdeste. Lamento, não tenho nada para ter dizer.",
+    textoFala: 'No fórum "Animais Raptados em Herdades", dizem que o Testículo foi levado por alguém que usa casacos de pele e diz "salchicha".',
     personagem: Raul
 }
 
 const blaze20 = {
     isFala: true,
-    textoFala: 'No fórum "Animais Raptados em Herdades", dizem que o Testículo foi levado por alguém que usa casacos de pele e diz "salchicha".',
+    textoFala: "Não tenho mais nada para te dizer.",
     personagem: Raul
 }
 
