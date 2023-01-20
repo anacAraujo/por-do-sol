@@ -36,8 +36,6 @@ const quartel4 = {
     textoOp2: "Não aceito o desafio.",
     nextOp2: 9,
     personagem: Eduardo,
-    isDesafioImg: true
-    //isDesafioSons: true
 }
 
 const quartel5 = {
@@ -54,7 +52,8 @@ const quartel6 = {
 
 const quartel7 = {
     isFala: true,
-    textoFala: "Não se preocupe, já vi mais de 100 episódios do Inspetor Max, estou pronto para ajudar.",
+    textoFala: "Não se preocupe, já vi mais de 100 episódios do Inspetor Max, estou pronto para ajudar.\n" +
+    "Primeira dica: Procuca o Raúl.",
     personagem: DoutorRodrigo
 }
 
@@ -145,7 +144,7 @@ const madragoa9 = {
     isFala: false,
     textoOp1: "Olhe aí o volume senhora",
     nextOp1: 12,
-    textoOp2: "Pode dizer-me onde está o Raul?",
+    textoOp2: "Pode dizer-me onde está o Raúl?",
     nextOp2: 10,
     personagem: Ivone1
 }
@@ -242,7 +241,7 @@ const blaze5 = {
     isFala: false,
     textoOp1: "Interrogar Filipa: Filipa, onde estava no dia em que o Testículo foi raptado?",
     nextOp1: 6,
-    textoOp2: "Interrogar Raul: Olá Raul.",
+    textoOp2: "Interrogar Raúl: Olá Raúl.",
     nextOp2: 13,
     personagem: DoutorRodrigo
 }
@@ -309,7 +308,7 @@ const blaze13 = {
 
 const blaze14 = {
     isFala: true,
-    textoFala: "Sim Raul. Fiz uma pesquisa rápida sobre ti no Bing e descobri que és o BigSifilis na DarkWeb e o campeão de mariposa em aquários de lagosta.",
+    textoFala: "Sim Raúl. Fiz uma pesquisa rápida sobre ti no Bing e descobri que és o BigSifilis na DarkWeb e o campeão de mariposa em aquários de lagosta.",
     personagem: Raul
 }
 
